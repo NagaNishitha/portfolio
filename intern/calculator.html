@@ -1,0 +1,156 @@
+<doctype>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+    </head>
+    <body style="background-image:url('calculator.jpeg');background-repeat:no-repeat;
+    background-size:cover;background-attachment: fixed;">
+    <br><br>
+    <marquee color="blue" scrollamount="10" direction="left">HELLO BUDDIES</marquee>
+        <h1 font-size="10px"><b><center>WELCOME TO OUR CALCULATOR</center></b></h1>
+        <br><br><br>
+        <h2 font-size="7px">Do you need calculator then click the below button :</h2>
+        <script type="text/javascript">
+            function nfunction()
+            {
+                var a=+prompt("Enter a positive integer value : ");
+                var b=+prompt("Enter another posiive integer value : ");
+                const op=prompt("Enter the operator you want : ");
+                if(op=='+')
+                {
+                    c=a+b;
+                    document.getElementById('nishi').innerHTML=("The sum of the given numbers is : ",c);
+                }
+                else if(op=='-')
+                {
+                    c=a-b
+                    document.writeln("The difference of the given numbers is : ",c);
+                }
+                else if(op=='*')
+                {
+                    c=a*b;
+                    document.writeln("The multiplication of the given numbers is : ",c);
+                }
+                else if(op=='/')
+                {
+                    c=a/b;
+                    document.writeln("The division of the given numbers is : ",c);
+                }
+                else if(op=='%')
+                {
+                    c=a%b;
+                    document.writeln("The remainder after the division of 2 numbers is : ",c);
+                }
+                else if(op=='++')
+                {
+                    c=a++;
+                    d=b++;
+                    document.writeln("The increment of the given numbers is : ",c,d);
+                }
+                else if(op=='--')
+                {
+                    c=a--;
+                    d=b--
+                    document.writeln("The decrement of the given numbers is : ",c,d);
+                }
+                else if(op=='==')
+                {
+                    if(a==b)
+                    {
+                    document.writeln(a," is equal to ",b);
+                    }
+                    else{document.writeln(a," and ",b," are not equal ");}
+                }
+                else if(op=='===')
+                {
+                    if(a===b)
+                    {
+                    document.writeln(a," is equal to ",b," (both value and type) ");
+                    }
+                    else{document.writeln(a," and ",b," are not equal ");}
+                }
+                else if(op=='!=')
+                {
+                    if(a!=b)
+                    {
+                    document.writeln("YES! ",a," and ",b," are not equal");
+                    }
+                    else{document.writeln(a," and ",b," are equal ");}
+                }
+                else if(op=='>')
+                {
+                    if(a>b)
+                    {
+                    document.writeln(a," is greater than ",b);
+                    }
+                    else{document.writeln(b," is greater than ",a);}
+                }
+                else if(op=='<')
+                {
+                    if(a<b)
+                    {
+                    document.writeln(a," is less than ",b);
+                    }
+                    else{document.writeln(b," is less than ",a);}
+                }
+                else if(op=='>=')
+                {
+                    if(a>b)
+                    {
+                    document.writeln(a," is greater than or equal to ",b);
+                    }
+                    else{document.writeln(b," is greater than or equal to ",a);}
+                }
+                else if(op=='<=')
+                {
+                    if(a>b)
+                    {
+                    document.writeln(a," is less than or equal to ",b);
+                    }
+                    else{document.writeln(b," is less than or equal to ",a);}
+                }
+                else if(op=='&&')
+                {
+                    document.writeln("Value of a&&b is ",a&&b);
+                }
+                else if(op=='||')
+                {
+                    document.writeln("Value of a||b is ",a||b);
+                }
+                else if(op=='=')
+                {
+                    a=b;
+                    document.writeln("Value of a is ",a);
+                }
+                else if(op=='+=')
+                {
+                    a+=b;
+                    document.writeln("Value of a is ",a);
+                }
+                else if(op=='-=')
+                {
+                    b-=a;
+                    document.writeln("Value of b is ",b);
+                }
+                else if(op=='*=')
+                {
+                    a*=b;
+                    document.writeln("Value of a is ",a);
+                }
+                else if(op=='/=')
+                {
+                    a/=b;
+                    document.writeln("Value of a is ",a);
+                }
+                else if(op=='%=')
+                {
+                    a%=b;
+                    document.writeln("Value of a is ",a);
+                }
+            }
+            document.getElementById("nishi").innerHTML="USE AGAIN!";
+        </script>
+        <button type="button" onclick="nfunction()" size="10px">CLICK HERE</button>
+        <p id="nishi"></p>
+    </body>
+</html>
